@@ -257,24 +257,20 @@ img {
 .extreme_sport_cell{
     position: relative;
 }
-#extreme_sport_color{
-    padding-top: 110px;
-    padding-bottom: 100px;
-}
-#extreme_sport_color h2{
+.common_head .extreme_sport_color h2{
     color: var(--bg-color);
 }
-#extreme_sport_color h3{
+.common_head .extreme_sport_color h3{
     color: #fff;
 }
 .common_head .extreme_sport_col p{
     color: #fff;
     width: 622px;
 }
-#extreme_sport_color{
+.extreme_sport_color{
     position: relative;
 }
-#extreme_sport_color::after{
+.extreme_sport_color::after{
     border: 2px solid #fff;
     content: '';
     position: absolute;
@@ -283,6 +279,8 @@ img {
 .common_head{
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 .extreme_sport_coll{
     width: 424px;
@@ -500,8 +498,70 @@ img {
    text-align: center;
 }
 /* -------------- logo css part End------------ */
-/* ============= common css part start =========*/
-/* -------------- common css part End------------ */
+/* ============= Paragliding Adventures css part start =========*/
+.paragliding_col{
+    padding-top: 0;
+}
+.common_head .bg_colors h3{
+    color: #000;
+}
+.common_head .bg_colors::after{
+    border: 2px solid  #A0A0A0;
+    content: '';
+    position: absolute;
+    width: 81px;
+}
+.common_head .bg_colors_1 p{
+    color: #000;
+}
+.paragliding_text_col{
+    justify-content: space-between;
+}
+.paragliding_text{
+    width: 424px;
+    border-radius: 15px 15px 0 0;
+}
+.paragliding_text_all{
+    flex-direction: column;
+    align-items: center;
+}
+.paragliding_text_all h2{
+    width: 315px;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: #000;
+    margin-top: 36px;
+    margin-bottom: 32px;
+}
+.paragliding_text_all p{
+    width: 312px;
+    text-align: center;
+    margin: 0;
+    color: #000;
+}
+.paragliding_text_all span{
+    display: inline-block;
+    width: 424px;
+    border: 1px solid #000;
+    margin-top: 42px;
+    margin-bottom: 44px;
+}
+.paragliding_text_all h4{
+    width: 104px;
+    font-weight: 700;
+    text-align: center;
+    color: #14B9F1;
+    margin: 0;
+}
+#paragliding_text_bg{
+    color: var(--bg-color);
+}
+.group_imges{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* -------------- Paragliding Adventures css part End------------ */
 /* ============= common css part start =========*/
 /* -------------- common css part End------------ */
 /* ============= common css part start =========*/
