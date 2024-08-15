@@ -1,0 +1,516 @@
+/* Google Fonts stat */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
+
+/* Google Fonts End */
+/* ============= common css part start =========*/
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+.ibm-fonts {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+.display-flex {
+    display: flex;
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+:root{
+    --fonts:#fff;
+    --hover-color:#FF9600;
+    --bg-color:#FF9600;
+}
+/* -------------- common css part End------------ */
+/* ============= navbar css part start =========*/
+#main_menu {
+    width: 100%;
+    padding-top: 20px;
+    position: absolute;
+}
+.menu_row {
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #000; */
+}
+.menu_row .logo_col img {
+    width: 225px;
+}
+.menu_items {
+    gap: 53px;
+}
+.menu_items li a {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color:var(--fonts) ;
+    transition: all linear 0.3s;
+}
+.menu_items li a:hover{
+    color: var(--hover-color);
+}
+.menu_button a{
+    font-weight: 700;
+    padding: 20px 51px;
+    border-radius: 10px;
+    background-color:var(--bg-color) ;
+    font-size: 1.125rem;
+    color: var(--fonts);
+    transition: all linear 0.3s;
+}
+.menu_button a:hover{
+    background-color: tomato;
+}
+.menu_items li{
+    position: relative;
+}
+.menu_items li ul{
+    width: 120px;
+    background-color: gray;
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    border-radius: 8px;
+    transform: translateX(-50%);
+    opacity: 0; 
+    transition: all linear .5s;
+}
+.menu_items li:hover ul{
+    opacity: 100%;
+}
+/* -------------- navbar css part End------------ */
+/* ============= banner css part start =========*/
+#banner{
+    background: url('/imges/Group 4.png');
+    padding-top: 300px;
+    padding-bottom: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.banner_text{
+    width: 819px;
+    font-weight: 700;
+    font-size: 4.5rem;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner_btn{
+    display: flex;
+    padding-top: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 57px;
+}
+.banner_btn a{
+    background-color: #fff;
+    color: #000;
+}
+.banner_btn a:hover{
+    color: #fff;
+}
+
+/* -------------- banner css part End------------ */
+/* ============= common-head css part start =========*/
+#adventure{
+    padding-top: 105px;
+    padding-bottom: 100px;
+}
+.adventures_row{
+    display: flex;
+    justify-content: space-between;
+}
+.common_head .common_head_text h2{
+    font-family: "Yellowtail", cursive;
+    font-size: 30px;
+    color: #49C4F5;
+}
+.common_head .common_head_text h3{
+    width: 598px;
+    font-weight: 700;
+    font-size: 54px;
+    color:#222222;
+    margin-top: 4px;
+    margin-bottom: 29px;
+}
+.common_head_text{
+    position: relative;
+}
+.common_head_text::after{
+    content: '';
+    width: 83px;
+    border: 1px solid #000;
+    position: absolute;
+}
+.common_head p{
+    width: 597px;
+    margin-top:68px;
+    margin-bottom: 35;
+    color: #000;
+}
+.options .single_options span{
+    width: 30px;
+    height: 30px;
+   background-color: #C4C4C4;
+   border-radius: 50%;
+    display: inline-block;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.options .single_options p{
+    width: 417px;
+    color: #000;
+    margin: 0;
+}
+.options .single_options{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.options .options_button a{
+    width: 200px;
+    height: 62px;
+    background-color:var(--bg-color);
+    border-radius: 8px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .3s;
+}
+.options .options_button a:hover{
+    background: tomato;
+}
+.adventures_poto .aventures_poto-1{
+    width: 300px;
+}
+.adventures_poto .aventures_poto-2{
+    width: 295px;
+    margin-left: 50px;
+}
+/* ---------- common head part End ------------ */
+
+/* -------------- sport count part End------------ */
+#sport_count{
+    padding-bottom: 100px;
+}
+.sport_count_row{
+    display: flex;
+    justify-content: space-between;
+}
+.sport_count_row .sport_text h1{
+    font-weight: 700;
+    font-size: 80px;
+    color: #000;
+    margin: 0;
+}
+.sport_count_row .sport_text p{
+    color: #000;
+    margin: 0;
+    
+}
+.sport_count_row .sport_text{
+    width: 312px;
+    height: 150px;
+    background-color:#FFF4E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#bg_color_1{
+    background-color:  #E7FDE9;
+}
+#bg_color_2{
+    background-color:   #dcdcf3;
+}
+/* ============= Extreme sport part start =========*/
+#sport{
+    background-color: #285969;
+}
+.extreme_sport_cell{
+    position: relative;
+}
+#extreme_sport_color{
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+#extreme_sport_color h2{
+    color: var(--bg-color);
+}
+#extreme_sport_color h3{
+    color: #fff;
+}
+.common_head .extreme_sport_col p{
+    color: #fff;
+    width: 622px;
+}
+#extreme_sport_color{
+    position: relative;
+}
+#extreme_sport_color::after{
+    border: 2px solid #fff;
+    content: '';
+    position: absolute;
+    width: 81px;
+}
+.common_head{
+    justify-content: space-between;
+    align-items: center;
+}
+.extreme_sport_coll{
+    width: 424px;
+    background-color: #13485a;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+}
+.extreme_sport_row{
+    padding-bottom: 120px;
+}
+.extreme_sport_row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 25px;
+    row-gap: 50px;
+}
+.extreme_sport_col_1 img{
+    transition: all linear .3s;
+}
+.extreme_sport_col_1:hover img{
+   transform: scale(1.1);
+}
+.extreme_sport_col_2{
+    padding: 36px 92px 84px 92px;
+}
+.extreme_sport_col_2 h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--bg-color);
+    text-align: center;
+    transition: all linear .4s;
+}
+.extreme_sport_coll .extreme_sport_col_2 h2:hover{
+    color: #FF9600;
+}
+.extreme_sport_col_2 p{
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
+.fonts-color h2{
+    color:rgba(255, 255, 255, 1);
+}
+/* -------------- Extreme sport css part End------------ */
+/* ============= new_adventures css part start =========*/
+#new_adventures{
+    background-color: #FF9600;
+}
+.new_adventures_row{
+    position: relative;
+}
+.sport_logo {
+    text-align: center;
+    padding-top: 30px;
+}
+.sport_logo img{
+    width: 103px;
+}
+.boundaries_text h2{
+    width: 1315px;
+    font-weight: 700;
+    font-size: 54px;
+    color: #FFF;
+    text-align: center;
+    padding-top: 28px;
+    margin: 0;
+   padding-bottom: 50px;
+}
+.boundaries_text p{
+    font-weight: 700;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    color: #FFF;
+    padding-bottom: 55px;
+}
+.boundaries_btn{
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 500px;
+}
+.sport_videos_col{
+    justify-content: space-between;
+}
+.sport_videos_col{
+    width: 100%;
+    position: absolute;
+    margin: -403px 0 0 0;
+}
+.boundaries_btn a{
+   padding: 23px 42px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color:#0C3543 ;
+    transition: all linear .6s;
+}
+.boundaries_btn a:hover{
+    color: #e2dbdb;
+    background-color: tomato;
+    border-radius: 10px; 
+}
+.sport_videos_row{
+    width: 395px;
+    height: 447px;
+    border-radius: 15px;
+    background-image: url(../imges/sports_1.png);
+}
+.sport_videos_row{
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.sport_videos_row a h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFF;
+    margin: 0;
+   
+}
+.sport_videos_row a h3{
+    font-weight: 700;
+    font-size: 28px;
+    color: #FFF;
+    margin-top: 27px;
+    margin-bottom: 38px;
+}
+.sport_videos_row span{
+    width: 260px;
+    height: 2px;
+    display: inline-block;
+    background-color:#C4C4C4;
+}
+.sport_videos_row a p{
+    color: #A0A0A0;
+    margin-bottom: 28px;
+}
+.bg_imges{
+    background-image: url(../imges/sports_2.png);
+}
+.bg_imges_col{
+    background-image: url(../imges/sports_3.png);
+}
+/* -------------- new_adventures css part End------------ */
+/* ============= logo css part start =========*/
+#logo{
+    padding-bottom: 150px;
+}
+.logo_choose_row{
+    padding-top: 200px;
+}
+.logo_choose_row .logo_text_row h2{
+    font-family: "Yellowtail", cursive;
+    font-size: 30px;
+    color: #14B9F1;
+    margin: 0;
+    text-align: center;
+}
+.logo_choose_row .logo_text_row h3{
+    font-weight: 700;
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+    padding-bottom: 81px;
+}
+.logo_choose_row .logo_text_row h3::after{
+    width: 100px;
+    height: 2px;
+    content: '';
+    position: absolute;
+    margin: 60px 0px 0px -142px;
+    background-color: #A0A0A0;
+}
+.logo_choose_text_row{
+    justify-content: space-between;
+}
+.logo_choose_text_col{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo_choose_text_col a{
+    font-weight: 700;
+    font-size: 30px;
+    color: #000;
+    padding: 55px 38px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    transition: all linear 0.6s;
+}
+.logo_choose_text_col:hover a{
+    color: #14B9F1;
+    background-color: #13485a;
+}
+.logo_choose_text_col h2{
+    width: 250px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.logo_choose_text_col p{
+    width: 275px;
+   color: #000;
+   margin: 0;
+   text-align: center;
+}
+/* -------------- logo css part End------------ */
+/* ============= common css part start =========*/
+/* -------------- common css part End------------ */
+/* ============= common css part start =========*/
+/* -------------- common css part End------------ */
+/* ============= common css part start =========*/
+/* -------------- common css part End------------ */
+/* ============= common css part start =========*/
+/* -------------- common css part End------------ */
+/* ============= common css part start =========*/
+/* -------------- common css part End------------ */
+/* ============= common css part start =========*/
+/* -------------- common css part End------------ */
+/* ============= common css part start =========*/
+/* -------------- common css part End------------ */
